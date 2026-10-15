@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+
+    <style>
+        .main-one {
+            display: flex;
+            border: 1px solid #0000ff;
+            padding: 10px;
+            justify-content: center;
+            justify-content: space-evenly;
+            display: none;
+        }
+
+        .smaller {
+            border: 1px solid #ef16dd;
+            height: 100px;
+        }
+
+        .kakubwa {
+            width: 60%;
+        }
+
+        .kadogo {
+            width: 35%;
+        }
+        .yapili{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .yandani{
+            width: 23%;
+            border-bottom: 1px solid #ef16dd;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- shortcut .classname= div with class name -->
+    <div class="main-one">
+        <div class="smaller kakubwa">A</div>
+        <div class="smaller kadogo">B</div>
+    </div>
+
+    <!-- shortcut .classname>.subclassname>h1+p+img-->
+    <div class="yapili">
+        <div class="yandani">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos est quod iusto, dicta officia,
+                ratione, vitae corporis blanditiis ipsum reiciendis doloribus ut natus. Culpa et assumenda qui
+                placeat inventore!</p>
+        </div>
+        <div class="yandani">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, corrupti eveniet at perspiciatis, harum
+                excepturi est quo commodi blanditiis adipisci non sequi placeat reiciendis maxime dolorem unde quis et
+                dolor!</p>
+        </div>
+        <div class="yandani">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, minus expedita deleniti nostrum
+                voluptatibus facilis quod quas accusantium iste autem ipsa possimus quam dolores cum libero
+                distinctio aspernatur necessitatibus enim.</p>
+        </div>
+        <div class="yandani">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptatum! Quisquam, quod. Voluptate,
+                quia. Tempore, voluptatum!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

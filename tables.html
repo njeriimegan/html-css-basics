@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        body {
+            background-color: #454545;
+            font-family: serif, sans-serif;
+
+        }
+
+        table{
+            border: 2px solid #050505;
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        
+        }
+
+        th{
+            border: 2px solid #050505;
+            padding: 1rem;
+            text-align: left;
+            background-color: #fdf8fc;
+            color: #050505;
+            
+        }
+
+        td{
+            border: 1px solid #050505;
+            padding: 1rem
+        }
+
+        .kuzaliwa{
+            color: #07ebc9;
+        }
+    </style>
+</head>
+<!-- table(thead(tr, th),tbody(tr, td)) -->
+<!-- you can nest tags i.e <td> <button> <\td> -->
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th> First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>DOB</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Jane </td>
+            <td>Muthoni</td>
+            <td>jane.muthoni@example.com</td>
+            <td class="kuzaliwa">1990-01-01</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>Kamau</td>
+            <td>james.kamau@example.com</td>
+            <td class="kuzaliwa">1985-05-15</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Mikah</td>
+            <td>Makau</td>
+            <td>mikah.makau@example.com</td>
+            <td class="kuzaliwa">1995-12-10</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Stephen</td>
+            <td>Omondi</td>
+            <td>stephen.omondi@example.com</td>
+            <td class="kuzaliwa">1992-08-20</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Kelvin</td>
+            <td>Kibet</td>
+            <td>kelvin.kibet@example.com</td>
+            <td class="kuzaliwa">1990-06-15</td>
+            <td>Male</td>
+        </tr>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

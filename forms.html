@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Nabla&family=Oswald:wght@200..700&family=Tangerine:wght@400;700&family=Ultra&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: #caeafb;
+
+        }
+
+        form {
+            background-color: #c4c2c4;
+            padding: 1rem;
+            /* can also be measured in pixels(px) */
+            /* padding-left,top,right,bottom */
+            margin: auto;
+            /* distance between you and your neighbors */
+            /* can also be measured in pixels(px). margin-left,top,right,bottom */
+            border: 1px solid #0000ff;
+            width: 50%;
+
+        }
+
+        label {
+            color: #5b5b58;
+            text-align: center;
+            font-family: 'tangerine', 'Cooper Black', sans-serif;
+            font-size: 2rem;
+        }
+
+        input {
+            color: #3e09ee;
+            text-align: left;
+            font-family: 'Tangerine', cursive;
+            font-size: 1.5rem;
+        }
+
+        .full_width {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #e7f14f;
+            color: #d414ca;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Ultra', cursive;
+            font-size: 1.5rem;
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- you can specify the type of input the form is to capture e.g text,email,password,gender(radio buttons), number, (select, checkbox) and submit button -->
+    <form>
+        <label for="full_name">Name</label> <br>
+        <input class="full_width" type="text" required id="full_name" name="full_name"
+            placeholder=" Enter Your Full Name"> <br>
+
+        <label for="email">Email</label> <br>
+        <input class="full_width" type="email" required id="email" name="email" placeholder="janemuthoni@example.com">
+        <br>
+
+        <!-- for = should match the id of the input field -->
+        <label for="password">Password</label> <br>
+        <input class="full_width" type="password" required id="password" name="password"
+            placeholder="Enter Your Password"> <br>
+
+        <!-- the name must be the same for the radio buttons so that one does not record to be both male and female -->
+        <!-- interchange the label and input fields to make it more legible bringing the radio button appear on the left-->
+        <label for="gender">Gender</label> <br>
+        <input type="radio" required id="m" name="gender" value="male">
+        <label for="m">Male</label> <br>
+
+        <input type="radio" required id="f" name="gender" value="female">
+        <label for="f">Female</label> <br>
+
+        <label for="weight">Weight</label> <br>
+        <input class="full_width" type="number" min="30" max="300" step="0.01" required id="weight" name="weight"
+            placeholder=" Weight in Kgs"> <br>
+
+        <!-- min and max can be controlled in date of birth in american format i.e 1990-01-01 -->
+        <label for="dob">Date of Birth</label> <br>
+        <input class="full_width" type="date" required id="dob" name="dob"> <br>
+
+        <label for="food">Choose Your Favorite Food(s)</label> <br>
+        <input type="checkbox" required id="x" name="food">
+        <label for="x">Pizza</label> <br>
+
+        <input type="checkbox" required id="y" name="food">
+        <label for="y">Fries</label> <br>
+
+        <input type="checkbox" required id="z" name="food">
+        <label for="z">Pilau</label> <br>
+
+        <label for="county">Choose Your County</label> <br>
+        <select name="county" id="county">
+            <option>Mombasa</option>
+            <option>Kwale</option>
+            <option>Kilifi</option>
+            <option>Tana River</option>
+            <option>Lamu</option>
+            <option>Taita Taveta</option>
+            <option>Garissa</option>
+            <option>Wajir</option>
+            <option>Mandera</option>
+            <option>Marsabit</option>
+            <option>Isiolo</option>
+            <option>Meru</option>
+            <option>Tharaka Nithi</option>
+            <option>Embu</option>
+            <option>Kitui</option>
+            <option>Machakos</option>
+            <option>Makueni</option>
+            <option>Nyandarua</option>
+            <option>Nyeri</option>
+            <option>Kirinyaga</option>
+            <option>Murang'a</option>
+            <option>Kiambu</option>
+            <option>Turkana</option>
+            <option> West Pokot</option>
+            <option>Samburu</option>
+            <option>Trans Nzoia</option>
+            <option>Uasin Gishu</option>
+            <option>Elgeyo Marakwet</option>
+            <option>Nandi</option>
+            <option>Baringo</option>
+            <option>Laikipia</option>
+            <option>Nakuru</option>
+            <option>Narok</option>
+            <option>Kajiado</option>
+            <option>Kericho</option>
+            <option>Bomet</option>
+            <option>Kakamega</option>
+            <option>Vihiga</option>
+            <option>Bungoma</option>
+            <option>Busia</option>
+            <option>Siaya</option>
+            <option>Kisumu</option>
+            <option>Homa Bay</option>
+            <option>Migori</option>
+            <option>Kisii</option>
+            <option>Nyamira</option>
+            <option>Nairobi</option>
+        </select>
+
+        <!-- turning off the autofill feature -->
+        <input type="hidden" name="autofill" value="off">
+
+        <!-- slider -->
+
+        <hr>
+
+        <button> Submit</button>
+
+
+
+    </form>
+</body>
+
+</html>
