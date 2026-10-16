@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            font-optical-sizing: auto;
+            margin: 0;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            /* background-color: #00ffff; */
+            border-bottom: 1px solid #080808;
+
+        }
+
+        .content {
+            /* background-color: #cda8f0; */
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .content ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .content ul li {
+            margin: 16px;
+            font-family: 'Alumni Sans Collegiate One', sans-serif;
+            font-size: 25px;
+
+        }
+
+        .content a {
+            text-decoration: none;
+            color: rgb(48, 3, 3);
+            padding: 12px 14px;
+            /* capitalize- capitalize the first letter of each word, lowercase */
+            /* text-transform: uppercase; */
+
+        }
+
+        .content a:hover {
+            color: #a52a2a;
+            text-decoration: underline;
+            text-decoration-color: #a52a2a;
+            text-decoration-thickness: 2px;
+            /* background-color: #785b93; */
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- semantic tags-nav,head,footer,aside(they are divs) -->
+    <nav>
+        <div class="content">
+            <div class="logo"> <img src="images/icons8-delivery-48.png" alt="Logo"> </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Get Help</a></li>
+                <li><a href="#">Meet the team</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
